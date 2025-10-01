@@ -1,7 +1,7 @@
 import { w3cwebsocket as Socket } from "websocket";
 import { useState, useEffect } from "react";
 
-const client = new Socket("https://chats-eoc9.vercel.app/");
+const client = new Socket("wss://chats-eoc9.vercel.app/");
 
 const Chat = ({ userName }) => {
   const [myMessage, setMyMessage] = useState("");
